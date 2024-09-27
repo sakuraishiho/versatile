@@ -7,3 +7,12 @@
   <strong>Email:</strong>
   <%= @user.email %>
 </p>
+
+<% if @user.profile_image.attached? %>
+  <div>
+    <strong>プロフィール画像:</strong>
+    <%= image_tag @user.profile_image %> <!-- プロフィール画像の表示 -->
+  </div>
+<% else %>
+  <p>プロフィール画像はありません。</p>
+<% end %>
