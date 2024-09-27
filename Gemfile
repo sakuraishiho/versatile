@@ -49,6 +49,7 @@ group :development do
   gem 'letter_opener'
   gem 'sidekiq'
   gem 'redis'
+  gem 'image_processing', '~> 1.2'
 end
 
 group :test do
